@@ -8,8 +8,14 @@ struct ContentView: View {
             
             VStack {
                 Text("🍏Applio🍏")
+                
+                
+                    Menu("Option") {
+                    Text("Start Applio🍏 1")
+                    Text("Update Applio🍏 2")
+                }
                     .font(.custom("Pacifico-Regular", size: 30)) // Fuente personalizada
-                    .foregroundColor(Color(red: 53 / 255, green: 104 / 255, blue: 86 / 255)) // Color de texto personalizado
+                    .foregroundColor(Color(red: 53 / 255, green: 103 / 255, blue: 86 / 255)) // Color de texto personalizado
                 
                 Image("aesthetic_image") // Agrega una imagen estética
                     .resizable()
@@ -25,4 +31,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
