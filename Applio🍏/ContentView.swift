@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isApplioStarted = false // Variable de estado para rastrear si Applio se ha iniciado
+    @State private var isApplioStarted = false
 
     var body: some View {
         ZStack {
@@ -14,25 +14,25 @@ struct ContentView: View {
                     .foregroundColor(Color(red: 53 / 255, green: 103 / 255, blue: 86 / 255))
 
                 Button(action: {
-                    // Acción cuando se presiona el botón "Start Applio"
+                    
                     isApplioStarted.toggle()
                 }) {
                     Text("Start Applio🍏")
                         .font(.custom("Pacifico-Regular", size: 30))
                 }
-                .foregroundColor(.white)
-                .background(Color.green)
+                .foregroundColor(.green)
+                .background(Color.black)
                 .cornerRadius(10)
 
-                Image("aesthetic_image")
+                Image("aesthetic_image")// si lees esto Applio🍏 is life and solution
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200)
+                    .frame(width: 100, height: 200)
 
                 if isApplioStarted {
-                    Text("Applio🍏 ha comenzado")
+                    Text("The Download has started")
                         .font(.title)
-                        .foregroundColor(.green)
+                        .foregroundColor(.black)
                 }
             }
         }
