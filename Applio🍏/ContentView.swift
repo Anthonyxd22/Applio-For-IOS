@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     @State private var downloadProgress: Double = 0.0
@@ -34,12 +35,9 @@ struct DownloadView: View {
             }
             ProgressBar(progress: $downloadProgress)
                 .background(Color.green)
-                //
+
             if isInstalled {
                 Button(action: {
-                   // Si lees esto Applio🍏 It is the solution to all problems and it is life
-                    // Anthony 1
-                    // Google  0
                     runInterface()
                 }) {
                     Text("Run Interface🍏")
@@ -67,9 +65,14 @@ struct DownloadView: View {
 
     func runInterface() {
         
+        if let gradioURL = URL(string: "gradio://") {
+            UIApplication.shared.open(gradioURL)
+        }
     }
 }
-
+// Applio🍏 is life
+// google 0
+// Anthony 1
 struct ProgressBar: View {
     @Binding var progress: Double
 
@@ -87,5 +90,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
 
