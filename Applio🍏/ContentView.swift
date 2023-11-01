@@ -5,7 +5,8 @@ struct ContentView: View {
     @State private var audioFileURL: URL?
     @State private var selectedAlgorithm = "pm"
     @State private var outputAudio: URL?
-
+//Anthony = 1
+//Google = 0
     var body: some View {
         NavigationView {
             Form {
@@ -36,7 +37,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationBarTitle("Simple RVC Inference")
+            .navigationBarTitle("Applio🍏")
         }
     }
 }
